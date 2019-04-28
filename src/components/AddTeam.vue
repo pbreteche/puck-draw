@@ -1,6 +1,6 @@
 <template>
 <div>
-<form v-on:submit.prevent="add">
+<form v-show="teams.length < 16" v-on:submit.prevent="add">
   <input v-model="newTeamName" placeholder="Team name"/>
 </form>
   <span>{{ teams.length }} / 16</span>

@@ -1,7 +1,7 @@
 <template>
   <ul>
     <li v-for="(team, index) in teams" v-bind:key="team.id">
-      <span v-on:click="showForm(index)" v-show="index!=editedTeam">{{ team.name }}</span>
+      <span v-on:click="showForm(index)" v-show="index!=editedTeam">{{ team.name }} (#{{team.id}})</span>
       <form v-on:submit.prevent="hideForm" v-show="index==editedTeam">
         <input v-model="teams[index].name">
       </form>
