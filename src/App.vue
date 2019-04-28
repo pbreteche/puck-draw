@@ -1,18 +1,14 @@
 <template>
   <div id="app">
     <h1>Puck Draw</h1>
-    <AddTeam/>
-  </div>
+    <router-view></router-view>
+    </div>
 </template>
 
 <script>
-import AddTeam from './components/AddTeam.vue'
 
 export default {
-  name: 'app',
-  components: {
-    AddTeam
-  }
+  name: 'app'
 }
 </script>
 

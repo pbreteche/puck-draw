@@ -14,7 +14,7 @@ import TeamList from './TeamList.vue'
 
 export default {
   name: 'AddTeam',
-  components: {TeamList},
+  components: { TeamList },
   data: function () {
     return {
       newTeamName: '',

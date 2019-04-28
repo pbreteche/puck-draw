@@ -16,7 +16,7 @@ export default {
   name: 'TeamList',
   props: {
     teams: Array
-    },
+  },
   data: function () {
     return {
       editedTeam: -1
